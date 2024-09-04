@@ -1,0 +1,66 @@
+extension:
+------------
+-ES7 React/Redux/GraphQL/React-Native snippets  (For React snippets)
+-Tailwind CSS IntelliSense  (For Tailwind suggestion)
+
+
+--------------------------------------------------------------------
+				React.JS
+--------------------------------------------------------------------			
+Step 1: (cmd)
+---------------
+npm create vite@latest
+
+
+Step 2: (cmd)
+---------------
+Project name: ... .
+
+
+step 3: (cmd)
+---------------
+Package name: ... react-type
+
+
+step 4: (cmd)
+---------------
+Select a framework: » React
+
+
+step 5: (cmd)
+---------------
+Select a variant: » TypeScript
+
+
+step 6: (cmd)
+---------------
+npm install
+
+
+step 7: (cmd)
+---------------
+npm install -D tailwindcss postcss autoprefixer
+
+
+step 8: (cmd)
+---------------
+npx tailwindcss init -p
+
+
+step 9: (change tailwind.config.js)
+--------------------------------------
+ content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+
+
+step 10: (Add into index.css)
+--------------------------------
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+step 11: (cmd)
+----------------
+npm run dev

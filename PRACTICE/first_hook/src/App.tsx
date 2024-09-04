@@ -1,12 +1,12 @@
-import Hello from "./components/HELLO/hello";
+import Hook from './components/HOOK1/hook'
 import './App.css'
 
 function App() {
-  
+
 
   return (
     <>
-      <Hello/>
+             <Hook/>
     </>
   )
 }
