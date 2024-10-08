@@ -1,4 +1,5 @@
 
+
 import { useEffect, useRef, useState } from "react"
 // USEREF 
 //      isy ye hoga ke ismy hm jo rakhengy wo component rerender hoy pr  nhi run hoga
@@ -9,6 +10,8 @@ function Hook() {
   const [inputvalue,setinputvalue]=useState("")
   const count = useRef(0)
   // isko bhi hm ak by defult value dety hen or iski value ko dekhny ke liye hm variable ke name ke sath current likhna lazmi hot he
+
+
 
   useEffect(()=>{
     count.current=count.current+1
@@ -27,6 +30,17 @@ function Hook() {
        />
       <h1> Render Count :{count.current}</h1>
     </div>
+
+    // isky ilawa hm useref ko as a dom maupolation bhi use kr skty hen or oski value hm rakhengy null 
+    // isko hm use esy krengy ke useref ko ak variable ko me store krengy or jis tag ki manupulation hmy krni he os tage ke ander jakr hm ref={variable ka name}
+    // de dengy jesy 
+
+    //   const reffer = useRef(0)
+    //  <h1 ref={reffer}> </h1>
+    // <button onclick={()=>{
+    //         reffer.style.background="bule"       }}><button/>
+
+    // isy hoga ye ke button ke click hony pr h1 ka background ho jayga blue krli hmny esy dom manupulation
   )
 }
 
